@@ -10,3 +10,4 @@ app.get("/cal",(req,res){
   res.send(simpleInterest);
 }
 );
+app.listen(8080);
