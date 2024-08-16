@@ -1,0 +1,12 @@
+//so we are writing a code that help in calculating simple interest 
+const express = require("express");
+const app = express();
+app.use(express.json());
+app.get("/cal",(req,res){
+  const p = parseInt(req.query.p);
+  const r = parseInt(req.query.r);
+  const t = parseInt(req.query.t);
+  const simpleInterest = (p*r*t)/100;
+  res.send(simpleInterest);
+}
+);
